@@ -24,7 +24,7 @@ body a {
 .headerContainer a {
     border-left : 1px solid grey;
     margin-left: 1em;
-    padding : 0 0 0 1em;
+    padding : 0 1em 0 1em;
     color: grey;
 }
 
@@ -56,6 +56,51 @@ body a {
     display: grid;
     grid-template-columns: 35% 65%;
     column-gap: 2em;
+}
+
+@media (max-width: 1200px) {
+   .contentContainer {
+    display: block!important;
+   }
+   
+   .articleButtonsGridContainer {
+    display: block!important;
+   }
+
+   .articleGridContainer {
+    display: block!important;
+   }
+
+   .articleTextGridContainer {
+     border-right:0!important;
+     border-bottom: 1px solid gray;
+   }
+
+   .headerContainer {
+    display: block!important;
+   }
+
+   .articleButtonsLikeContainer {
+    display: block!important;
+    text-align: left!important;
+   }
+
+   .articleButtonsLikeContainer div {
+    border: none!important;
+    padding: 0!important;
+   }
+
+   .articleAuthorGridContainer {
+    padding: 1em 0 1em 0!important;
+   }
+
+   .headerContainer a {
+    margin: 0!important;
+   }
+
+   .logo {
+    border: none;
+   }
 }
 
 .titleContainer {
@@ -94,7 +139,7 @@ body a {
 .miniVignetteTextContainer {
     display: grid;
     grid-template-rows: 50% 50%;
-    padding: 2em;
+    padding: 0 1em 0 1em;
 }
 
 .miniVignetteTextContainer div {
@@ -128,7 +173,7 @@ body a {
 }
 
 .articleTextGridContainer div {
-    padding-top: 1em;   
+    padding-top: 1em 0 1em 0;   
 }
 
 .article {
