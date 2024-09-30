@@ -1,282 +1,137 @@
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: lightgrey;
-    margin: 0px;
-}
-
-body a {
-    color: black;
-    text-decoration: none;
-}
-
-.logo {
-    padding: 1em 0 1em 0;
-    border-right : 1px solid grey;
-}
-
-.headerContainer {
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    border-bottom: 1px grey solid;
-    background-color: white;
-}
-
-.headerContainer a {
-    border-right : 1px solid grey;
-    margin-left: 1em;
-    padding : 0 1em 0 1em;
-    color: grey;
-}
-
-.headerContainer a:last-child {
-    border-right: 0!important;
-}
-
-
-.headerContainer .logo {
-    padding-left: 1em;
-}
-
-.linksContainer {
-    padding: 1em 0 1em 0;
-}
-
-.buttonsContainer {
-    text-align: right;
-    padding: 1em 0 1em 0;
-}
-
-.buttonsContainer span {
-    border-left: 1px solid grey;
-    padding: 0 20px 0 20px;
-}
-
-.contentContainer {
-    margin: 3em;
-    display: grid;
-    grid-template-columns: 35% 65%;
-    column-gap: 2em;
-}
-
-@media (max-width: 1200px) {
-   .contentContainer {
-     display: block!important;
-     margin: 0!important;
-   }
-
-   .article {
-    margin: 2em 0 2em 0!important;
-   }
-   
-   .articleButtonsGridContainer {
-    display: block!important;
-   }
-
-   .articleGridContainer {
-    display: block!important;
-   }
-
-   .articleTextGridContainer {
-     border-right:0!important;
-     border-bottom: 1px solid gray;
-   }
-
-   .headerContainer {
-    display: block!important;
-   }
-
-   .articleButtonsLikeContainer {
-    display: block!important;
-    text-align: left!important;
-   }
-
-   .articleButtonsLikeContainer div {
-    border: none!important;
-    padding: 0!important;
-   }
-
-   .articleAuthorGridContainer {
-    padding: 1em 0 1em 0!important;
-   }
-
-   .headerContainer a {
-    margin: 0!important;
-   }
-
-   .logo {
-    border: none;
-    border-bottom: 1px solid grey!important;
-   }
-}
-
-.titleContainer {
-    border-bottom: 1px solid grey;
-    padding: 1em 2em 1em 2em;
-}
-
-.vignettesContainer {
-    border-bottom: 1px solid grey;
-    padding-bottom : 2em;
-}
-
-.vignette {
-    margin-top: 2em;
-    background-color: white;
-}
-
-.vignetteGridContainer {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    padding: 1em;
-}
-
-.vignetteImgContainer {
-    text-align : center;
-}
-
-.miniVignetteGridContainer {
-    display: grid;
-    grid-template-columns: 25% 75%;
-}
-
-.miniVignetteImgContainer {
-    text-align : center;
-}
-
-.miniVignetteTextContainer {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    padding: 0 1em 0 1em;
-}
-
-.miniVignetteTextContainer div {
-    margin-bottom: 1em;
-}
-
-.miniVignette {
-    padding: 2em 0 2em 0;
-    border-bottom: 1px solid grey;
-}
-
-.aboutContainer {
-    margin-top: 2em;
-    border-bottom: 1px solid grey;
-    padding: 2em 1em 2em 1em;
-}
-
-.aboutContainer div {
-    padding : 1em 0 1em 0;
-}
-
-.articleGridContainer {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    border-bottom: 1px solid grey;
-}
-.articleTextGridContainer {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border-right: 1px solid grey;
-}
-
-.articleTextGridContainer div {
-    padding-top: 1em 0 1em 0;   
-}
-
-.article {
-    background-color: white;
-    padding: 2em;
-    margin: 2em;
-}
-
-.articleAuthorGridContainer {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    padding: 1em;
-}
-
-.articleAuthorLogoGridContainer {
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
-.articleAuthorLogoGridContainer div:first-child {
-    padding-top: 1em;
-}
-
-.articleDescriptionContainer {
-    padding: 2em 0 2em 0;
-}
-
-.articleDescriptionTextContainer {
-    padding: 2em 0 2em 0;
-}
-
-.articleButtonsGridContainer {
-    display: grid;
-    grid-template-columns: 25% auto 35%;
-}
-
-.articleButtonsLikeContainer {
-    text-align: right;
-    display: flex;
-}
-
-.articleButtonsLikeContainer div {
-    border-left: 1px solid grey;
-    padding: 0 5px 0 5px;
-}
-
-.articleButtonsLikeContainer div:first-child{
-    border: none!important;
-}
-
-.articleButtonsLikeContainer div span {
-    padding-left: 1em;
-}
-
-.hexagon {
-    overflow: hidden;
-    visibility: hidden;
-    -webkit-transform: rotate(120deg);
-       -moz-transform: rotate(120deg);
-        -ms-transform: rotate(120deg);
-         -o-transform: rotate(120deg);
-            transform: rotate(120deg);
-    cursor: pointer;
-}
-
-.hexagon1 {
-    width: 200px;
-    height: 50px;
-    margin: 0 0 0 -80px;
-}
-
-.hexagon-in1 {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
-.hexagon-in2 {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url(images/fox.jpg);
-    visibility: visible;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-}
-
 .round-image {
     border-radius: 50%;
     border: 1px solid grey;
+}
+
+.presentationContainer {
+    padding: 2em 3em 2em 3em;
+    border-bottom: 1px solid gray;
+    margin: 0!important;
+}
+
+.pictureContainer {
+    text-align: right;
+}
+
+.introTextContainer div {
+    padding: 1em 0 1em 0;
+}
+
+.learnButtonContainer {
+    text-align: center;
+}
+
+.stuffContainer{
+    background-color: #f4f4f4;
+    margin: 0!important;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+}
+
+.stuffTitleContainer {
+    text-align: center;
+}
+
+.stuffTitleDescriptionContainer {
+    text-align: center;
+}
+
+.stuffListContainer {
+    display: flex;
+    text-align: center;
+}
+.stuffItemContainer {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 2em;
+    margin: 1em;
+
+}
+
+.stuffListDescriptionContainer {
+    text-align: center;
+}
+
+.stuffButtonContainer {
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.madeContainer {
+    margin: 0!important;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+}
+
+.madeItemContainer {
+    border:1px solid grey;
+    background-color: white;
+    width: 150px;
+    margin: 2em 0 2em 0;
+}
+
+.formContainer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em 3em 2em 3em;
+}
+
+.formTitleDescriptionContainer {
+    color: grey;
+}
+
+.formContainer {
+    margin-top: 2em;
+}
+
+.formFormContainer div {
+    margin: 2em 0 0 0;
+}
+
+.formFormContainer .col {
+    padding: 0;
+}
+
+.formFormContainer .col:first-child {
+    padding: 0 1em 0 0!important;
+}
+
+.formFormContainer .col:last-child {
+    padding: 0 0 0 1em!important;
+}
+
+
+@media (max-width: 768px){
+    .pictureContainer {
+        text-align: center!important;
+    }
+
+    .stuffListContainer {
+        display: block;
+    }
+
+    .madeListContainer {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px){
+    .madeListContainer{
+        display: flex;
+    }
+
+    .madeItemContainer {
+        margin: 2em;
+    }
+
+    .formButtonsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
