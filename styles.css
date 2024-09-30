@@ -69,7 +69,8 @@
     border:1px solid grey;
     background-color: white;
     width: 150px;
-    margin: 2em 0 2em 0;
+    margin: 2em 1em 2em 1em;
+    padding: 0!important;
 }
 
 .formContainer {
