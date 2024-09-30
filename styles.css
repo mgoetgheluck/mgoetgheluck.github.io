@@ -22,14 +22,14 @@ body a {
 }
 
 .headerContainer a {
-    border-left : 1px solid grey;
+    border-right : 1px solid grey;
     margin-left: 1em;
     padding : 0 1em 0 1em;
     color: grey;
 }
 
-.headerContainer a:first-child {
-    border-left: 0!important;
+.headerContainer a:last-child {
+    border-right: 0!important;
 }
 
 
@@ -60,7 +60,12 @@ body a {
 
 @media (max-width: 1200px) {
    .contentContainer {
-    display: block!important;
+     display: block!important;
+     margin: 0!important;
+   }
+
+   .article {
+    margin: 2em 0 2em 0!important;
    }
    
    .articleButtonsGridContainer {
@@ -105,6 +110,7 @@ body a {
 
 .titleContainer {
     border-bottom: 1px solid grey;
+    padding: 1em 2em 1em 2em;
 }
 
 .vignettesContainer {
@@ -154,7 +160,7 @@ body a {
 .aboutContainer {
     margin-top: 2em;
     border-bottom: 1px solid grey;
-    padding: 2em 0 2em 0;
+    padding: 2em 1em 2em 1em;
 }
 
 .aboutContainer div {
