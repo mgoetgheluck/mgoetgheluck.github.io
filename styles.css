@@ -105,6 +105,7 @@ body a {
 
    .logo {
     border: none;
+    border-bottom: 1px solid grey!important;
    }
 }
 
