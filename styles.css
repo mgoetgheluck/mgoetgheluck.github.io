@@ -1,6 +1,5 @@
-.round-image {
-    border-radius: 50%;
-    border: 1px solid grey;
+.myPictureContainer {
+    text-align: right;  
 }
 
 .presentationContainer {
@@ -9,16 +8,8 @@
     margin: 0!important;
 }
 
-.pictureContainer {
-    text-align: right;
-}
-
 .introTextContainer div {
     padding: 1em 0 1em 0;
-}
-
-.learnButtonContainer {
-    text-align: center;
 }
 
 .stuffContainer{
@@ -28,111 +19,35 @@
     border-bottom: 1px solid grey;
 }
 
-.stuffTitleContainer {
-    text-align: center;
-}
-
-.stuffTitleDescriptionContainer {
-    text-align: center;
+.stuffItemContainer {
+    border: 1px solid grey;
+    margin: 2em 0 2em 0;
+    padding: 1em;
+    background-color: white;     
 }
 
 .stuffListContainer {
     display: flex;
-    text-align: center;
-}
-.stuffItemContainer {
-    background-color: white;
-    border: 1px solid grey;
-    padding: 2em;
-    margin: 1em;
-
 }
 
-.stuffListDescriptionContainer {
-    text-align: center;
-}
-
-.stuffButtonContainer {
-    text-align: center;
-    margin: 1em 0 1em 0;
-}
-
-.madeContainer {
-    margin: 0!important;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 2em;
-    border-bottom: 1px solid grey;
-}
-
-.madeItemContainer {
-    border:1px solid grey;
-    background-color: white;
-    width: 150px;
-    margin: 2em 1em 2em 1em;
-    padding: 0!important;
-}
-
-.formContainer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 2em 3em 2em 3em;
-}
-
-.formTitleDescriptionContainer {
-    color: grey;
-}
-
-.formContainer {
-    margin-top: 2em;
-}
-
-.formFormContainer div {
-    margin: 2em 0 0 0;
-}
-
-.formFormContainer .col {
-    padding: 0;
-}
-
-.formFormContainer .col:first-child {
-    padding: 0 1em 0 0!important;
-}
-
-.formFormContainer .col:last-child {
-    padding: 0 0 0 1em!important;
-}
 
 
 @media (max-width: 768px){
-    .pictureContainer {
+    .myPictureContainer {
+        text-align: center!important;
+    }
+
+    .learnButtonContainer {
         text-align: center!important;
     }
 
     .stuffListContainer {
         display: block;
     }
-
-    .madeListContainer {
-        text-align: center;
-        width: 50%;
-        margin: auto;
-    }
 }
 
-@media (min-width: 1200px){
-    .madeListContainer{
-        display: flex;
-    }
-
-    .madeItemContainer {
-        margin: 2em;
-    }
-
-    .formButtonsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+@media (min-width: 768px) {
+   .stuffItemContainer {
+    margin: 1em 1em 1em 1em;
+   }
 }
