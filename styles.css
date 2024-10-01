@@ -30,6 +30,14 @@
     display: flex;
 }
 
+.portfolioItemContainer {
+    border: 1px solid grey;
+    margin: 2em 0 2em 0;
+    padding: 1em;
+    background-color: white;
+    text-align: center;    
+}
+
 
 
 @media (max-width: 768px){
@@ -48,6 +56,10 @@
 
 @media (min-width: 768px) {
    .stuffItemContainer {
+    margin: 1em 1em 1em 1em;
+   }
+
+   .portfolioItemContainer {
     margin: 1em 1em 1em 1em;
    }
 }
